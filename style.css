@@ -1,0 +1,129 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+main {
+    max-width: 1100px;
+    margin:20px auto;
+    padding: 1% 3%;
+}
+h2, h3 {
+    text-align: center;
+}
+h2 {
+    font-size: 36px;
+}
+h3 {
+    font-size: 24px;
+}
+
+.explain {
+    font-style: italic;
+    font-size:18px;
+}
+
+/* User Input */
+.number-input-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin:0 auto;
+    background-color: antiquewhite;
+    border: 2px solid darkgrey;
+    border-radius: 30px;
+}
+.init-num-display {
+    cursor: default;
+    font-family: cursive;
+    font-size:48px;
+    padding:5px 10px;
+    min-width: 100px;
+    text-align: center;
+    border: 2px solid darkgrey;
+    background-color: white;
+}
+.number-input-panel input {
+    cursor: pointer;
+    margin: 10px 0;
+}
+.number-input-panel input[type="submit"] {
+    text-transform: uppercase;
+    font-size:36px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    padding:5px 15px;
+}
+
+/* Explain */
+.explain-panel {
+    box-sizing: border-box;
+    font-family: cursive;
+    font-size:18px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    min-height: 90px;
+    background-color: antiquewhite;
+    border: 2px solid darkgrey;
+}
+
+/* Naturals Table */
+.sieve-table {
+    display: block;
+    margin: 0 auto;
+    border-collapse: collapse;
+    max-height: 300px;
+    overflow: auto;
+}
+.sieve-table td {
+    text-align: center;
+    font-family: cursive;
+    font-size: 24px;
+    min-width: 50px;
+    padding: 5px 0;
+    border: 2px solid grey;
+}
+/* Naturals in the table */
+.one {
+    color:grey;
+    background-color:lightgrey;
+}
+.prime {
+    color:green;
+    background-color:lightgreen;
+}
+.composite {
+    color:darkgrey;
+    background-color:lightgrey;
+    text-decoration: line-through;
+}
+#marked-number {
+    color:crimson;
+    background-color:lightblue;
+}
+
+/* Repeat */
+.repeat-button {
+    cursor: pointer;
+    font-family: monospace;
+    font-size:24px;
+    font-weight: 800;
+    margin: 30px auto 0 auto;
+    padding: 10px 15px;
+}
+
+@media screen and (max-width: 700px) {
+    .explain-panel {
+        min-height: 120px;
+    }
+    .sieve-table {
+        max-height: 200px;
+    }
+    .sieve-table td {
+        font-size:18px;
+        min-width: 40px;
+        padding: 2px;
+    }
+}
